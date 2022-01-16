@@ -114,16 +114,17 @@ C96=g.addV('city').property('Name',' Yeshwanthpur').property('AreaCode','560022'
 
 Resturants
 
-R1=g.addV('restaurant').property('Name',' Barbeque Nation').next()
-R2=g.addV('restaurant').property('Name',' Punjab Grill').next()
-R3=g.addV('restaurant').property('Name',' BonSouth').next()
-R4=g.addV('restaurant').property('Name',' Chutney Chang').next()
-R5=g.addV('restaurant').property('Name',' The Fisherman’s Wharf').next()
-R6=g.addV('restaurant').property('Name',' Nagarjuna').next()
-R7=g.addV('restaurant').property('Name',' Empire').next()
-R8=g.addV('restaurant').property('Name',' Onesta').next()
-R9=g.addV('restaurant').property('Name',' Truffles').next()
-R10=g.addV('restaurant').property('Name',' Kanua').next()
+R1=g.addV('restaurant').property('Name','Barbeque Nation').next()
+R2=g.addV('restaurant').property('Name','Punjab Grill').next()
+R3=g.addV('restaurant').property('Name','BonSouth').next()
+R4=g.addV('restaurant').property('Name','Chutney Chang').next()
+R5=g.addV('restaurant').property('Name','The Fishermans Wharf').next()
+R6=g.addV('restaurant').property('Name','Nagarjuna').next()
+R7=g.addV('restaurant').property('Name','Empire').next()
+R8=g.addV('restaurant').property('Name','Onesta').next()
+R9=g.addV('restaurant').property('Name','Truffles').next()
+R10=g.addV('restaurant').property('Name','Kanua').next()
+
 
 
 
@@ -139,4 +140,9 @@ g.addE('situated_in').from(R7).to(C61).next()
 g.addE('situated_in').from(R8).to(C61).next()
 g.addE('situated_in').from(R9).to(C53).next()
 g.addE('situated_in').from(R10).to(C53).next()
+
+
+
+get restaurants that is in  users location
+g.V().has("user","EmailId","best.sai21@gmail.com").out("situated_in").in("situated_in").hasLabel("restaurant").valueMap()
 
