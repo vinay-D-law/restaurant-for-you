@@ -22,10 +22,10 @@ I read in books and blogs that systems related to social media and recommender s
 
 When I say Domain, I mean the entities that the users will be directly interacting with. Like 
 
-User Model ->  as users will follow other users, users can see their profile. 
-Restaurant -> This entity is something the user will directly interact with. 
-Review -> User will write a review about a restaurant. 
-Location -> This is something both user and restaurant interact with. So, even location makes it to the domain layer. 
+1. User Model ->  as users will follow other users, users can see their profile. 
+2. Restaurant -> This entity is something the user will directly interact with. 
+3. Review -> User will write a review about a restaurant. 
+4. Location -> This is something both user and restaurant interact with. So, even location makes it to the domain layer. 
 
 One good thing about Db schema and the domain model that we write for our backend is both follow the same structure and this way we can use the same design to design both 
 backend and db schema. 
